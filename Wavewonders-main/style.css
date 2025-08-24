@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0f7f0;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-style:unset;
+    font-weight: bold;
+    color: #005a5c;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #005a5c;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #019888;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('https://img.freepik.com/premium-photo/side-profile-portrait-young-girl-her-hair-blowing-wind-as-she-looks-into_891336-67951.jpg'); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+
+.banner .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.banner .btn-primary, .banner .btn-secondary {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn-primary {
+    background-color: #019888;
+}
+
+.banner .btn-primary:hover {
+    background-color: #016f63;
+}
+
+.banner .btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.banner .btn-secondary:hover {
+    background-color: white;
+    color: #005a5c;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e0f7f0;
+    padding: 20px 0;
+}
+
+.features .feature-item {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #005a5c;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Formula</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background:url('https://thumbs.dreamstime.com/b/waves-rich-golden-hair-close-up-view-wavy-highlighting-its-smooth-texture-natural-flow-327187370.jpg')no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background: #c3e3dd;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 24px;
+             font-style:unset;
+            font-weight: bold;
+            color: #005a5c;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(14, 11, 11);
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #3e8e7a;
+        }
+
+        /* Container Styles */
+        .customize {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+            background: rgb(252, 203, 160);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 2em auto;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .customize h1 {
+            color: #3f1414;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .customize p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select, button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus, button:focus {
+            outline: none;
+            border-color: #411414;
+            box-shadow: 0 0 5px rgba(100, 30, 30, 0.911);
+        }
+
+        button {
+            background: #3b1212;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #9750c1;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .customize {
+                margin: 1em;
+                padding: 1.5em;
+            }
+
+            form {
+                gap: 10px;
+            }
+
+            .customize h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Wave Wonders</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="customize">
+        <h1>Let's Go!!</h1>
+        <p>Tell us about your hair to customize your perfect formula.</p>
+        <form action="submit.html" method="post">
+            <label for="hair-type">Hair Type:</label>
+            <select id="hair-type" name="hair-type" required>
+                <option value="">Select</option>
+                <option value="curly">Curly</option>
+                <option value="wavy">Wavy</option>
+                <option value="straight">Straight</option>
+                <option value="coily">Coily</option>
+            </select>
+
+            <label for="scalp-type">Scalp Type:</label>
+            <select id="scalp-type" name="scalp-type" required>
+                <option value="">Select</option>
+                <option value="dry">Dry</option>
+                <option value="oily">Oily</option>
+                <option value="normal">Normal</option>
+                <option value="sensitive">Sensitive</option>
+            </select>
+
+            <label for="porosity">What is your hair porosity?</label>
+            <select id="porosity" name="porosity">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+
+            <label for="goals">Hair Goals (Select up to 3):</label>
+            <select id="goals" name="goals[]" multiple size="5" required>
+                <option value="strengthen">Strengthen</option>
+                <option value="hydrate">Hydrate</option>
+                <option value="volume">Increase Volume</option>
+                <option value="repair">Repair Damage</option>
+                <option value="shine">Enhance Shine</option>
+            </select>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

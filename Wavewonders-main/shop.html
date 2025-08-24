@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Wave Wonders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #eaf8f4;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #156c6c;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #156c6c;
+            font-weight: bold;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            margin-top: 15px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #156c6c;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #156c6c;
+        }
+
+        .product-rating {
+            color: #f39c12;
+            margin: 5px 0;
+        }
+
+        .view-details-btn {
+            background-color: #156c6c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .view-details-btn:hover {
+            background-color: #1d9a9a;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Wave Wonders</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product List -->
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card" onclick="window.location.href='product1.html'">
+            <img src="https://u-static.haozhaopian.net/uid_1939d3e5be43d4-01ab2886492ed87-26011851-1327104-1939d3e5be5ce8/aiImage/7ca7bd2859c14d6b85300130b89194ed.jpg" alt="Product 1" class="product-image">
+            <div class="product-info">
+                <div class="product-name">SOS Custom Repair Shampoo</div>
+                <div class="product-description">A nourishing shampoo for healthier, stronger hair.</div>
+                <div class="product-price">$25.60</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/7b0c676a-8366-4e48-af66-1c9d468c4f43/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Anti-Dry Hair Shampoo</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$22.00</div>
+                <div class="product-rating">⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+        <!-- Repeat for 18 more products -->
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/7591b8aa-dfc3-4c5f-b665-2e4eb053cc6d/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Smoothening Hair Serum</div>
+                <div class="product-description">Rich moisture to smoothen damaged hair.</div>
+                <div class="product-price">$23.20</div>
+                <div class="product-rating">⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/94053531-162c-4550-9741-37949065618a/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Wave Defining Hair Conditioner </div>
+                <div class="product-description">Smooth conditioning to define your waves.</div>
+                <div class="product-price">$21.00</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/e40a99ac-20cc-4879-a14f-876407921a37/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Deep Hydration Hair Oil</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$18.36</div>
+                <div class="product-rating">⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/cdb1c945-7c52-4b9b-9958-276be9f15240/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name"> Shine Hair Shampoo</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$22.50</div>
+                <div class="product-rating">⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/e5d2457f-debe-46eb-8c6c-afcdd0dbca1e/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Damage Repair Hair Seruml</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$32.45</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/4acc01f7-31e0-442a-a5c4-b7b78a039a3e/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Deep-Shine Hair Oil</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$21.06</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/3c66e5b3-7ca2-4ce0-a894-19f610aca6be/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name"> Anti-Hairfall Hair Oil</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$22.00</div>
+                <div class="product-rating">⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/b05463a6-0f86-4b8c-bb2a-bb89b549e1dd/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Deep Nourishing Hair Serum</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$30.40</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/0374e1c8-f5ec-4a33-bf8e-4d1bb1f7e71f/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Deep Hydration Hair Oil</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$27.81</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/90faee26-c174-4211-ae11-f372665c0893/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Anti-Dandruff Hair Shampoo</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$24.50</div>
+                <div class="product-rating">⭐⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/1efb15f9-69a1-45b7-b968-a614d04912fa/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Frizz Control Hair Conditioner</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$32.20</div>
+                <div class="product-rating">⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+
+        <div class="product-card" onclick="window.location.href='product2.html'">
+            <img src="https://api.deepai.org/job-view-file/ffa48c52-8a4f-48ea-9a6b-e7e0929d0ef6/outputs/output.jpg?art-image=true" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <div class="product-name">Deep Hydration Hair Oil</div>
+                <div class="product-description">Rich moisture to restore dry and damaged hair.</div>
+                <div class="product-price">$28.74</div>
+                <div class="product-rating">⭐⭐⭐⭐</div>
+                <button class="view-details-btn">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Optional JS functionality for future use
+    </script>
+</body>
+</html>
